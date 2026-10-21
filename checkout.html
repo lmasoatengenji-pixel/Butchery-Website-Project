@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Prime Cuts Butchery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Prime <span>Cuts</span></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="my-account.html">My Account</a></li>
+          <li><a href="checkout.html" class="active">Cart (3)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="container">
+      <h1>Checkout</h1>
+      <p>Confirm your details and review your order before paying.</p>
+    </div>
+  </section>
+
+  <main class="container checkout-layout">
+    <form class="checkout-form" action="#" method="post">
+      <fieldset>
+        <legend>Your details</legend>
+        <div class="form-row">
+          <div class="field">
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+          </div>
+          <div class="field">
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Delivery address</legend>
+        <div class="field">
+          <label for="address">Street address</label>
+          <input type="text" id="address" name="address" autocomplete="street-address" required>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+          </div>
+          <div class="field">
+            <label for="area">Area / District</label>
+            <input type="text" id="area" name="area">
+          </div>
+        </div>
+        <div class="field">
+          <label for="notes">Delivery notes (optional)</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="Gate code, preferred delivery time, how you'd like the meat cut..."></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment details</legend>
+        <div class="field">
+          <label for="card-name">Name on card</label>
+          <input type="text" id="card-name" name="card-name" autocomplete="cc-name" required>
+        </div>
+        <div class="field">
+          <label for="card-number">Card number</label>
+          <input type="text" id="card-number" name="card-number" inputmode="numeric" placeholder="0000 0000 0000 0000" autocomplete="cc-number" required>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="expiry">Expiry date</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" autocomplete="cc-exp" required>
+          </div>
+          <div class="field">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" inputmode="numeric" maxlength="4" autocomplete="cc-csc" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn btn-gold">Place order</button>
+    </form>
+
+    <aside class="order-summary" aria-label="Order summary">
+      <h2>Order summary</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Qty</th>
+            <th scope="col" class="num">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ribeye Steak (3KG)</td>
+            <td>3</td>
+            <td class="num">MWK 54,000</td>
+          </tr>
+          <tr>
+            <td>Boerewors (1 kg)</td>
+            <td>1</td>
+            <td class="num">MWK 12,500</td>
+          </tr>
+          <tr>
+            <td>Lamb Chops (2KG)</td>
+            <td>2</td>
+            <td class="num">MWK 29,500</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <dl class="totals">
+        <div>
+          <dt>Subtotal</dt>
+          <dd>MWK96,000 </dd>
+        </div>
+        <div>
+          <dt>Shipping</dt>
+          <dd>$7,500</dd>
+        </div>
+        <div class="grand-total">
+          <dt>Total</dt>
+          <dd>MWK103,500 </dd>
+        </div>
+      </dl>
+
+      <p class="summary-note">All meat is packed fresh and delivered in a chilled container.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Prime Cuts Butchery. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="products.html">Products</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
+

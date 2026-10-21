@@ -1,262 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Our Products | FreshCuts Butchery</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Prime Cuts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Prime <span>Cuts</span></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="my-account.html">My Account</a></li>
+          <li><a href="checkout.html">Cart (3)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- ================= PRODUCTS SECTION ================= -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Our Products</h1>
+      <p>Fresh, premium cuts selected for flavour, quality, and value.</p>
+    </div>
+  </section>
 
-    <section class="py-5 bg-light">
-
-        <div class="container">
-
-            <!-- Section Heading -->
-            <div class="text-center mb-5">
-                <h1 class="fw-bold text-danger">Our Products</h1>
-
-                <p class="text-muted">
-                    Fresh meat, quality cuts, and the best prices for you.
-                </p>
-            </div>
-
-            <!-- Product Cards -->
-            <div class="row g-4">
-
-                <!-- BEEF CARD -->
-                <div class="col-12 col-sm-6 col-lg-3">
-
-                    <div class="card h-100 shadow-sm">
-
-                        <img src="beef.jpg"
-                             class="card-img-top"
-                             alt="Fresh beef"
-                             style="height: 200px; object-fit: cover;">
-
-                        <div class="card-body d-flex flex-column">
-
-                            <h5 class="card-title fw-bold">Fresh Beef</h5>
-
-                            <p class="card-text">
-                                High-quality beef, perfect for your favourite meals.
-                            </p>
-
-                            <p class="fw-bold text-danger">MK 12,000 / kg</p>
-
-                            <a href="#" class="btn btn-danger mt-auto">
-                                Order Now
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- CHICKEN CARD -->
-                <div class="col-12 col-sm-6 col-lg-3">
-
-                    <div class="card h-100 shadow-sm">
-
-                        <img src="chicken.jpg"
-                             class="card-img-top"
-                             alt="Fresh chicken"
-                             style="height: 200px; object-fit: cover;">
-
-                        <div class="card-body d-flex flex-column">
-
-                            <h5 class="card-title fw-bold">Fresh Chicken</h5>
-
-                            <p class="card-text">
-                                Quality chicken suitable for family meals and special occasions.
-                            </p>
-
-                            <p class="fw-bold text-danger">MK 8,000 / kg</p>
-
-                            <a href="#" class="btn btn-danger mt-auto">
-                                Order Now
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PORK CARD -->
-                <div class="col-12 col-sm-6 col-lg-3">
-
-                    <div class="card h-100 shadow-sm">
-
-                        <img src="pork.jpg"
-                             class="card-img-top"
-                             alt="Fresh pork"
-                             style="height: 200px; object-fit: cover;">
-
-                        <div class="card-body d-flex flex-column">
-
-                            <h5 class="card-title fw-bold">Fresh Pork</h5>
-
-                            <p class="card-text">
-                                Tender pork cuts prepared with care for delicious meals.
-                            </p>
-
-                            <p class="fw-bold text-danger">MK 10,000 / kg</p>
-
-                            <a href="#" class="btn btn-danger mt-auto">
-                                Order Now
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- SAUSAGES CARD -->
-                <div class="col-12 col-sm-6 col-lg-3">
-
-                    <div class="card h-100 shadow-sm">
-
-                        <img src="SS.jpg"
-                             class="card-img-top"
-                             alt="Fresh sausages"
-                             style="height: 200px; object-fit: cover;">
-
-                        <div class="card-body d-flex flex-column">
-
-                            <h5 class="card-title fw-bold">Sausages</h5>
-
-                            <p class="card-text">
-                                Delicious sausages, perfect for breakfast and braais.
-                            </p>
-
-                            <p class="fw-bold text-danger">MK 7,000 / kg</p>
-
-                            <a href="#" class="btn btn-danger mt-auto">
-                                Order Now
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+  <main class="container section-block">
+    <div class="product-grid">
+      <article class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=80" alt="Ribeye steak">
         </div>
-
-    </section>
-
-
-    <!-- ================= FOOTER SECTION ================= -->
-
-    <footer class="bg-dark text-white pt-5">
-
-        <div class="container">
-
-            <div class="row g-4 pb-4">
-
-                <!-- ABOUT -->
-                <div class="col-12 col-md-4">
-
-                    <h5 class="text-warning fw-bold">
-                        FreshCuts Butchery
-                    </h5>
-
-                    <p class="text-light">
-                        Your trusted source for fresh, quality meat
-                        and excellent customer service.
-                    </p>
-
-                </div>
-
-
-                <!-- QUICK LINKS -->
-                <div class="col-12 col-md-4">
-
-                    <h5 class="text-warning fw-bold">
-                        Quick Links
-                    </h5>
-
-                    <ul class="list-unstyled">
-
-                        <li class="mb-2">
-                            <a href="index.html"
-                               class="text-white text-decoration-none">
-                                Home
-                            </a>
-                        </li>
-
-                        <li class="mb-2">
-                            <a href="products.html"
-                               class="text-white text-decoration-none">
-                                Products
-                            </a>
-                        </li>
-
-                        <li class="mb-2">
-                            <a href="contact.html"
-                               class="text-white text-decoration-none">
-                                Contact Us
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-                <!-- CONTACT DETAILS -->
-                <div class="col-12 col-md-4">
-
-                    <h5 class="text-warning fw-bold">
-                        Contact Us
-                    </h5>
-
-                    <p class="mb-2">Phone: +265 99444312</p>
-
-                    <p class="mb-2">Email: info@freshcuts.com</p>
-
-                    <p>Location: Blantyre, Malawi</p>
-
-                </div>
-
-            </div>
-
-
-            <!-- COPYRIGHT -->
-            <div class="border-top border-secondary text-center py-3">
-
-                <p class="mb-0">
-                    &copy; 2026 FreshCuts Butchery.
-                    All rights reserved.
-                </p>
-
-            </div>
-
+        <div class="product-content">
+          <h3>Ribeye Steak</h3>
+          <p>Perfect for grill nights with rich marbling and a bold beefy flavour.</p>
+          <div class="product-meta"><span>$28.00</span><a href="checkout.html">Add to cart</a></div>
         </div>
+      </article>
 
-    </footer>
+      <article class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=900&q=80" alt="Boerewors sausage pack">
+        </div>
+        <div class="product-content">
+          <h3>Boerewors</h3>
+          <p>Traditional seasoning and juicy texture that works beautifully for braais.</p>
+          <div class="product-meta"><span>$12.50</span><a href="checkout.html">Add to cart</a></div>
+        </div>
+      </article>
 
+      <article class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=900&q=80" alt="Lamb chops">
+        </div>
+        <div class="product-content">
+          <h3>Lamb Chops</h3>
+          <p>Succulent and tender, ideal for a family dinner or special celebration.</p>
+          <div class="product-meta"><span>$18.75</span><a href="checkout.html">Add to cart</a></div>
+        </div>
+      </article>
 
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
+      <article class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Meat platter and grill">
+        </div>
+        <div class="product-content">
+          <h3>Mixed Grill Pack</h3>
+          <p>Great for sharing with a mix of steak, chicken, and sausage favourites.</p>
+          <div class="product-meta"><span>$34.90</span><a href="checkout.html">Add to cart</a></div>
+        </div>
+      </article>
 
+      <article class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=900&q=80" alt="Beef cuts on tray">
+        </div>
+        <div class="product-content">
+          <h3>Prime Beef Cuts</h3>
+          <p>Carefully selected for tenderness, presentation, and everyday steakhouse quality.</p>
+          <div class="product-meta"><span>$31.00</span><a href="checkout.html">Add to cart</a></div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1518492104633-130d0cc84637?auto=format&fit=crop&w=900&q=80" alt="Chicken meat tray">
+        </div>
+        <div class="product-content">
+          <h3>Chicken Portions</h3>
+          <p>Fresh, versatile cuts for quick meals, roasting, frying, or marinating.</p>
+          <div class="product-meta"><span>$15.20</span><a href="checkout.html">Add to cart</a></div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Prime Cuts. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
-
 </html>
